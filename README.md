@@ -4,3 +4,5 @@
 
 You can see console game 'brain-even' here:
 https://asciinema.org/a/Z9GiVRSgtuZzTBkYAl1V69rkp
+
+Here is link for console game 'brain-calc': https://asciinema.org/a/DSzG4BEXdY0Qx2Nl1aNXqMfzm
