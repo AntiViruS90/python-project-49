@@ -1,13 +1,13 @@
 import random
 import prompt
+from brain_games.game_const import GAME_INSTRUCTIONS, ROUND_COUNT, GREETING
 
 
 def math_calc():
-    player_name = prompt.string("Welcome to the Brain Games!\n"
-                                "May I have your name? ")
+    player_name = prompt.string(f"{GREETING} ")
     print(f'Hello, {player_name}!'
-          f'\nWhat is the result of the expression?')
-    for _ in range(3):
+          f'\n{GAME_INSTRUCTIONS["calc"]}')
+    for _ in range(ROUND_COUNT):
         first_num = random.randint(1, 10)
         second_num = random.randint(1, 10)
         calc_sign_list = ["+", "-", "*"]

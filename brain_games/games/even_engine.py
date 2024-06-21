@@ -1,14 +1,14 @@
 import prompt
 import random
+from brain_games.game_const import GAME_INSTRUCTIONS, ROUND_COUNT, GREETING
 
 
 def even_game():
-    player_name = prompt.string("Welcome to the Brain Games!\n"
-                                "May I have your name? ")
+    player_name = prompt.string(f"{GREETING} ")
     print(f'Hello, {player_name}!'
-          f'\nAnswer "yes" if the number is even, otherwise answer "no"')
+          f'\n{GAME_INSTRUCTIONS["even"]}')
 
-    for _ in range(3):
+    for _ in range(ROUND_COUNT):
         num = random.randint(1, 31)
         correct_answer = 'yes' if num % 2 == 0 else 'no'
 
