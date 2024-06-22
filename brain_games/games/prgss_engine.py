@@ -26,7 +26,8 @@ def func_progression():
         if missed_num == int(player_answer):
             print("Correct!")
         else:
-            print(f"'{player_answer}' is wrong answer ;(. Correct answer was {missed_num}.\n"
+            print(f"'{player_answer}' is wrong answer ;(. "
+                  f"Correct answer was {missed_num}.\n"
                   f"Let's try again, {player_name}!")
             return
 

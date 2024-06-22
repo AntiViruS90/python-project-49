@@ -21,7 +21,8 @@ def math_calc():
         if correct_answer == int(player_answer):
             print("Correct!")
         else:
-            print(f"'{player_answer}' is wrong answer ;(. Correct answer was {correct_answer}.\n"
+            print(f"'{player_answer}' is wrong answer ;(. "
+                  f"Correct answer was {correct_answer}.\n"
                   f"Let's try again, {player_name}!")
             return
 
