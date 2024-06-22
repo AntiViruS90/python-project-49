@@ -17,7 +17,7 @@ def func_progression():
 
         index_missed = random.randint(1, PROGRESSION_LENGTH - 1)
         missed_num = progression[index_missed]
-        progression[index_missed] = '...'
+        progression[index_missed] = '..'
         progression_for_player = ' '.join(map(str, progression))
 
         player_answer = prompt.string(f"\nQuestion: {progression_for_player}"
