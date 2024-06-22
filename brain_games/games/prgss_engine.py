@@ -28,5 +28,6 @@ def func_progression():
         else:
             print(f"'{player_answer}' is wrong answer ;(. Correct answer was {missed_num}.\n"
                   f"Let's try again, {player_name}!")
+            return
 
     return print(f"Congratulations, {player_name}!")
