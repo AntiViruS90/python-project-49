@@ -70,7 +70,7 @@ Here is [link](https://asciinema.org/a/DSzG4BEXdY0Qx2Nl1aNXqMfzm) for console ga
 
 Here is [link](https://asciinema.org/a/nJj8conDbwz7YuD2OTi0qb7ed) for console game 'brain-gcd'
 
-Here is [link](https://asciinema.org/a/f7Qe5jCtbRZyjX0zdUdBaewju) for console gama 'brain-progression'
+Here is [link](https://asciinema.org/a/f7Qe5jCtbRZyjX0zdUdBaewju) for console game 'brain-progression'
 
 Here is [link](https://asciinema.org/a/u3jBY27XTFZ3R71k4CCxlaeSn) for console game 'brain-prime'
 
