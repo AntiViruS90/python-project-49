@@ -1,6 +1,11 @@
 import random
 import prompt
-from brain_games.game_const import PROGRESSION_LENGTH, GREETING, GAME_INSTRUCTIONS, ROUND_COUNT
+from brain_games.game_const import (
+    PROGRESSION_LENGTH,
+    GAME_INSTRUCTIONS,
+    ROUND_COUNT,
+    GREETING
+)
 
 
 def func_progression():
