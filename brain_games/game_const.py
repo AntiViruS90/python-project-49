@@ -8,3 +8,4 @@ GAME_INSTRUCTIONS = {
 ROUND_COUNT = 3
 GREETING = "Welcome to the Brain Games!\nMay I have your name?"
 PROGRESSION_LENGTH = 10
+OPERATORS = ["+", "-", "*"]

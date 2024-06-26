@@ -1,29 +1,20 @@
 import random
-import prompt
-from brain_games.game_const import ROUND_COUNT, GREETING, GAME_INSTRUCTIONS
+from brain_games.game_engine import run_game
+from brain_games.game_const import GAME_INSTRUCTIONS
 
 
-def func_prime():
-    player_name = prompt.string(f"{GREETING} ")
-    print(f"Hello, {player_name}!"
-          f"\n{GAME_INSTRUCTIONS['prime']}")
+def func_prime(num):
+    prime_number = 'no' if num <= 1 or any(
+        num % i == 0 for i in range(2, (num // 2 + 1))
+    ) else 'yes'
+    return prime_number
 
-    for _ in range(ROUND_COUNT):
-        prime_num = random.randint(1, 30)
 
-        correct_answer = 'no' if prime_num <= 1 or any(
-            prime_num % i == 0 for i in range(2, (prime_num // 2 + 1))
-        ) else 'yes'
+def get_prime_num_and_answer():
+    num = random.randint(1, 30)
+    prime = func_prime(num)
+    return num, prime
 
-        player_answer = prompt.string(f"\nQuestion: {prime_num}"
-                                      f"\nAnswer: ")
 
-        if correct_answer == player_answer:
-            print("Correct!")
-        else:
-            print(f"'{player_answer}' is wrong answer ;(. "
-                  f"Correct answer was '{correct_answer}'.\n"
-                  f"Let's try again, {player_name}!")
-            return
-
-    return print(f"Congratulations, {player_name}!")
+def run_prime_engine_game():
+    run_game(get_prime_num_and_answer, GAME_INSTRUCTIONS['prime'])

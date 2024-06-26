@@ -1,26 +1,13 @@
-import prompt
 import random
-from brain_games.game_const import GAME_INSTRUCTIONS, ROUND_COUNT, GREETING
+from brain_games.game_const import GAME_INSTRUCTIONS
+from brain_games.game_engine import run_game
 
 
-def even_game():
-    player_name = prompt.string(f"{GREETING} ")
-    print(f'Hello, {player_name}!'
-          f'\n{GAME_INSTRUCTIONS["even"]}')
+def number_and_even_answer():
+    num = random.randint(1, 30)
+    correct_answer = 'yes' if num % 2 == 0 else 'no'
+    return num, correct_answer
 
-    for _ in range(ROUND_COUNT):
-        num = random.randint(1, 31)
-        correct_answer = 'yes' if num % 2 == 0 else 'no'
 
-        player_answer = prompt.string(f'Question: {num}'
-                                      f'\nAnswer: ').lower()
-
-        if correct_answer == player_answer:
-            print("Correct!")
-        else:
-            print(f"'{player_answer}' is wrong answer ;(. "
-                  f"Correct answer was {correct_answer}.\n"
-                  f"Let's try again, {player_name}!")
-            return
-
-    return print(f"Congratulations, {player_name}!")
+def run_even_engine_game():
+    run_game(number_and_even_answer, GAME_INSTRUCTIONS['even'])
