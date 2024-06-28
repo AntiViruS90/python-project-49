@@ -1,13 +1,15 @@
-import random
-from brain_games.game_const import GAME_INSTRUCTIONS
-from brain_games.game_engine import run_game
+from random import randint
 
 
-def number_and_even_answer():
-    num = random.randint(1, 30)
-    correct_answer = 'yes' if num % 2 == 0 else 'no'
-    return num, correct_answer
+GAME_TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def run_even_engine_game():
-    run_game(number_and_even_answer, GAME_INSTRUCTIONS['even'])
+def is_even(num):
+    return num % 2 == 0
+
+
+def question_and_answer():
+    num = randint(1, 30)
+    question = f"Question: {num}"
+    correct_answer = 'yes' if is_even(num) else 'no'
+    return question, correct_answer

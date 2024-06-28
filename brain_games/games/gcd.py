@@ -1,15 +1,13 @@
-import math
-import random
-from brain_games.game_engine import run_game
-from brain_games.game_const import GAME_INSTRUCTIONS
+from math import gcd
+from random import randint
+
+GAME_TASK = 'Find the greatest common divisor of given numbers.'
 
 
-def func_numbers_and_gcd():
-    first_num, second_num = random.randint(1, 50), random.randint(1, 30)
-    gcd_answer = math.gcd(first_num, second_num)
-    numbers = f"{first_num} {second_num}"
-    return numbers, str(gcd_answer)
+def question_and_answer():
+    first_num, second_num = randint(1, 50), randint(1, 30)
 
+    question = f"Question: {first_num} {second_num}"
+    correct_answer = gcd(first_num, second_num)
 
-def run_gcd_engine_game():
-    run_game(func_numbers_and_gcd, GAME_INSTRUCTIONS['gcd'])
+    return question, str(correct_answer)
