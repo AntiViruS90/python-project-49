@@ -6,7 +6,7 @@ ROUND_COUNT = 3
 def run(game):
     print('Welcome to the Brain Games!')
     player_name = prompt.string('May I have your name? ')
-    print(f'Hello {player_name}!')
+    print(f'Hello, {player_name}!')
     print(f"{game.GAME_TASK}")
 
     for _ in range(ROUND_COUNT):
