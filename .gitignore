@@ -1,5 +1,6 @@
 venv/
 .idea
+dist/
 brain-calc.cast
 brain-gcd.cast
 brain-progression.cast

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games.games.gcd_engine import run_gcd_engine_game
+from brain_games.games.gcd import run_gcd_engine_game
 
 
 def main():
