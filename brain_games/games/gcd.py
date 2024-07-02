@@ -16,7 +16,8 @@ def generate_random_numbers():
 
 def question_and_answer():
     """
-        Generate a question and answer for finding the greatest common divisor of two numbers.
+        Generate a question and answer for finding the greatest
+        common divisor of two numbers.
 
         Returns:
             tuple: A tuple containing the question and the correct answer.
