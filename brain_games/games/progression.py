@@ -1,17 +1,19 @@
-import random
+from random import randint
 
 GAME_TASK = 'What number is missing in the progression?'
 PROGRESSION_LENGTH = 10
 
 
+def generate_progression(start_num, step, length):
+    progression = [start_num + step * i for i in range(length)]
+    return progression
+
+
 def question_and_answer():
-    start_num, step = random.randint(1, 5), random.randint(1, 5)
-    progression = []
+    start_num, step = randint(1, 5), randint(1, 5)
+    progression = generate_progression(start_num, step, PROGRESSION_LENGTH)
 
-    for i in range(PROGRESSION_LENGTH):
-        progression.append(start_num + step * i)
-
-    index_missed = random.randint(1, PROGRESSION_LENGTH - 1)
+    index_missed = randint(1, PROGRESSION_LENGTH - 1)
 
     correct_answer = progression[index_missed]
 
