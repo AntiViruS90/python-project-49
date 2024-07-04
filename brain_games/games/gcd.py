@@ -14,7 +14,7 @@ def generate_random_numbers():
     return randint(1, 50), randint(1, 30)
 
 
-def question_and_answer():
+def get_question_and_answer():
     """
         Generate a question and answer for finding the greatest
         common divisor of two numbers.

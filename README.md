@@ -64,13 +64,23 @@ Enjoy the game)
 
 ### **Examples**
 
-You can see console game 'brain-even' [here](https://asciinema.org/a/Z9GiVRSgtuZzTBkYAl1V69rkp)
+Here is [link](https://asciinema.org/a/zu906Uf2GWhalAqjmbLrW9APl.svg) for console game 'brain-even'
+
+[![asciicast](https://asciinema.org/a/zu906Uf2GWhalAqjmbLrW9APl.svg)](https://asciinema.org/a/zu906Uf2GWhalAqjmbLrW9APl)
 
 Here is [link](https://asciinema.org/a/DSzG4BEXdY0Qx2Nl1aNXqMfzm) for console game 'brain-calc'
 
+[![asciicast](https://asciinema.org/a/DSzG4BEXdY0Qx2Nl1aNXqMfzm.svg)](https://asciinema.org/a/DSzG4BEXdY0Qx2Nl1aNXqMfzm)
+
 Here is [link](https://asciinema.org/a/nJj8conDbwz7YuD2OTi0qb7ed) for console game 'brain-gcd'
+
+[![asciicast](https://asciinema.org/a/nJj8conDbwz7YuD2OTi0qb7ed.svg)](https://asciinema.org/a/nJj8conDbwz7YuD2OTi0qb7ed)
 
 Here is [link](https://asciinema.org/a/f7Qe5jCtbRZyjX0zdUdBaewju) for console game 'brain-progression'
 
+[![asciicast](https://asciinema.org/a/f7Qe5jCtbRZyjX0zdUdBaewju.svg)](https://asciinema.org/a/f7Qe5jCtbRZyjX0zdUdBaewju)
+
 Here is [link](https://asciinema.org/a/u3jBY27XTFZ3R71k4CCxlaeSn) for console game 'brain-prime'
+
+[![asciicast](https://asciinema.org/a/u3jBY27XTFZ3R71k4CCxlaeSn.svg)](https://asciinema.org/a/u3jBY27XTFZ3R71k4CCxlaeSn)
 

@@ -17,11 +17,16 @@ def calculate(first_num, math_sign, second_num):
         Returns:
             int: The result of the arithmetic expression.
     """
-    result = eval(str(first_num) + math_sign + str(second_num))
-    return result
+    operations = {
+        '+': lambda x, y: x + y,
+        '-': lambda x, y: x - y,
+        '*': lambda x, y: x * y
+    }
+
+    return operations[math_sign](first_num, second_num)
 
 
-def question_and_answer():
+def get_question_and_answer():
     """
         Generate a math question and calculate the correct answer.
 

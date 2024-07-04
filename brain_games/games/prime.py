@@ -23,7 +23,7 @@ def is_prime(num):
     return True
 
 
-def question_and_answer():
+def get_question_and_answer():
     """
         Generate a question and answer for checking if a number is prime.
 

@@ -23,7 +23,7 @@ def run(game):
     print(f"{game.GAME_TASK}")
 
     for _ in range(ROUND_COUNT):
-        (question, correct_answer) = game.question_and_answer()
+        (question, correct_answer) = game.get_question_and_answer()
         print(question)
         player_answer = prompt.string("Answer: ")
 

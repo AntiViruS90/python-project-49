@@ -20,7 +20,7 @@ def generate_progression(start_num, step, length):
     return progression
 
 
-def question_and_answer():
+def get_question_and_answer():
     """
         Generate a question and answer for the missing number in
         an arithmetic progression.
